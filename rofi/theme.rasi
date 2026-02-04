@@ -1,0 +1,49 @@
+* {
+    bg: #11111b;       /* Цвет фона (Catppuccin Mocha) */
+    fg: #cdd6f4;       /* Цвет текста */
+    accent: #89b4fa;   /* Акцентный цвет (голубой) */
+    
+    background-color: transparent;
+    text-color: @fg;
+    margin: 0;
+    padding: 0;
+}
+
+window {
+    width: 600px;
+    background-color: @bg;
+    border-radius: 12px;
+    border: 2px;
+    border-color: @accent;
+}
+
+mainbox {
+    children: [ inputbar, listview ];
+}
+
+inputbar {
+    padding: 20px;
+    background-color: #181825;
+    children: [ prompt, entry ];
+}
+
+entry {
+    placeholder: "Search...";
+}
+
+listview {
+    columns: 1;
+    lines: 8;
+    fixed-height: true;
+    padding: 10px;
+}
+
+element {
+    padding: 10px;
+    border-radius: 8px;
+}
+
+element selected {
+    background-color: @accent;
+    text-color: @bg;
+}

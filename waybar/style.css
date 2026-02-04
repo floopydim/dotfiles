@@ -1,0 +1,37 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "FiraCode Nerd Font", "Font Awesome 6 Free";
+    font-size: 14px;
+}
+
+window#waybar {
+    background: rgba(20, 20, 30, 0.9);
+    color: #ffffff;
+}
+
+/* Общий стиль для всех модулей справа */
+#cpu, #memory, #custom-gpu, #pulseaudio, #clock, #tray {
+    padding: 0 10px;
+    margin: 4px 2px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+/* Разделяем воркспейсы */
+#workspaces button {
+    padding: 0 12px;
+    margin: 4px 2px;
+    background: transparent;
+    color: #ffffff;
+    border-bottom: 3px solid transparent;
+}
+
+#workspaces button.active {
+    background: rgba(255, 255, 255, 0.2);
+    border-bottom: 3px solid #00f2ff;
+}
+
+#cpu { color: #fb8c00; }
+#memory { color: #8e44ad; }
+#custom-gpu { color: #2ecc71; }
